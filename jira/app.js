@@ -4,14 +4,11 @@
     isReady(cb) {
       jq(document).ready(cb);
     },
-    appendToBody(domCb) {
-      domCb();
-    },
     addStyle(appStyle) {
       jq('head').append(`<style type="text/css">${appStyle}</style>`);
     },
     startApp(domCb, vueCb) {
-      this.appendToBody(domCb);
+      domCb();
       setTimeout(vueCb, 0);
     }
   };
