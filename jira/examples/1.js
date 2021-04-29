@@ -4,7 +4,10 @@
 // @include     https://kivutechnologies.atlassian.net/browse/*
 // @require     https://vuejs.org/js/vue.min.js
 // @require     https://code.jquery.com/jquery-3.4.1.min.js
-// @require     https://github.com/tobyqin/tampermonkey_vue/raw/master/github-info/app.js
+// @require     https://github.com/Rudchyk/tamp-scripts/blob/main/jira/components/Field.js
+// @require     https://github.com/Rudchyk/tamp-scripts/blob/main/jira/components/copy-to-clipboard.js
+// @require     https://github.com/Rudchyk/tamp-scripts/blob/main/jira/components/mr-link.js
+// @require     https://github.com/Rudchyk/tamp-scripts/blob/main/jira/app.js
 // @version     1
 // @grant       none
 // ==/UserScript==
