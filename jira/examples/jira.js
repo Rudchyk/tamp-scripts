@@ -14,10 +14,6 @@
 // @require     https://raw.githubusercontent.com/Rudchyk/tamp-scripts/main/jira/components/mr-link.js
 // @require     https://raw.githubusercontent.com/Rudchyk/tamp-scripts/main/jira/app.js
 // @version     1
-// @grant       GM_getValue
-// @grant       GM_setValue
-// @grant       GM_setClipboard
-// @run-at      document-body
 // @noframes
 // ==/UserScript==
 
@@ -104,8 +100,8 @@ Vue.component('App', {
       return branch === this.branchData.default ? this.branchName : `${this.branchName}-${branch}`;
     },
     changeStr: (string) => string.replace(/\[/g, '').replace(/\]/g, ''),
-    select: (e) => {
-      e.target.select();
+    refresh() {
+      this.issue.name = this.summary;
     },
     kebabCase(string) {
         return string
