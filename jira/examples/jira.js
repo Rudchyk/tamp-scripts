@@ -14,7 +14,11 @@
 // @require     https://raw.githubusercontent.com/Rudchyk/tamp-scripts/main/jira/components/mr-link.js
 // @require     https://raw.githubusercontent.com/Rudchyk/tamp-scripts/main/jira/app.js
 // @version     1
-// @grant       none
+// @grant       GM_getValue
+// @grant       GM_setValue
+// @grant       GM_setClipboard
+// @run-at      document-body
+// @noframes
 // ==/UserScript==
 
 window.jq = $.noConflict(true);
