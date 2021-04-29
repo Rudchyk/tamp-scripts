@@ -1,13 +1,18 @@
 // ==UserScript==
 // @name        JIRA issue helpers
+// @description JIRA issue helpers
+// @author      Sergii Rudchyk
 // @namespace   https://kivutechnologies.atlassian.net/browse/
 // @include     https://kivutechnologies.atlassian.net/browse/*
+// @supportURL  https://raw.githubusercontent.com/Rudchyk/tamp-scripts
+// @updateURL   https://raw.githubusercontent.com/Rudchyk/tamp-scripts/main/jira/examples/jira.js
+// @downloadURL https://raw.githubusercontent.com/Rudchyk/tamp-scripts/main/jira/examples/jira.js
 // @require     https://vuejs.org/js/vue.min.js
 // @require     https://code.jquery.com/jquery-3.4.1.min.js
-// @require     https://github.com/Rudchyk/tamp-scripts/blob/main/jira/components/Field.js
-// @require     https://github.com/Rudchyk/tamp-scripts/blob/main/jira/components/copy-to-clipboard.js
-// @require     https://github.com/Rudchyk/tamp-scripts/blob/main/jira/components/mr-link.js
-// @require     https://github.com/Rudchyk/tamp-scripts/blob/main/jira/app.js
+// @require     https://raw.githubusercontent.com/Rudchyk/tamp-scripts/main/jira/components/Field.js
+// @require     https://raw.githubusercontent.com/Rudchyk/tamp-scripts/main/jira/components/copy-to-clipboard.js
+// @require     https://raw.githubusercontent.com/Rudchyk/tamp-scripts/main/jira/components/mr-link.js
+// @require     https://raw.githubusercontent.com/Rudchyk/tamp-scripts/main/jira/app.js
 // @version     1
 // @grant       none
 // ==/UserScript==
