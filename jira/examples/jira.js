@@ -53,7 +53,7 @@ Vue.component('App', {
           </span>
         </Field>
         <Field :label="'Branch Name for ' + branch" :value="useBranchName(branch)" :copyToClipboard="useBranchName(branch)" v-for="branch in branches">
-          <mr-link :branch="useBranchName(branch)" :main-branch="branch"></mr-link>
+          <mr-link :href="mrHref(branch)" :branch="branch" />
         </Field>
         <Field label="Commit Name:" :value="commitName" :copyToClipboard="commitName" />
       </section>
@@ -73,7 +73,8 @@ Vue.component('App', {
         extra: [
           'ideamars',
         ]
-      }
+      },
+      gitHubLink: 'https://github.com/KIVU-Technologies/kivu-gui/compare/',
     }
   },
   computed: {
@@ -96,13 +97,13 @@ Vue.component('App', {
     this.issue.name = this.summary;
   },
   methods: {
+    mrHref(branch) {
+      return `${this.gitHubLink}${this.useBranchName(branch)}...${branch}`;
+    },
     useBranchName(branch) {
       return branch === this.branchData.default ? this.branchName : `${this.branchName}-${branch}`;
     },
     changeStr: (string) => string.replace(/\[/g, '').replace(/\]/g, ''),
-    refresh() {
-      this.issue.name = this.summary;
-    },
     select: (e) => {
       e.target.select();
     },

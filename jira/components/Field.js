@@ -21,7 +21,7 @@ Vue.component('Field', {
           :value="value"
         >
       </label>
-      <copy-to-clipboard v-if="copyToClipboard" :text="copyToClipboard"></copy-to-clipboard>
+      <copy-to-clipboard v-if="copyToClipboard" :text="copyToClipboard"/>
       <slot>
     </div>
   `,
