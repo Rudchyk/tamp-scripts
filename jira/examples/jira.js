@@ -7,7 +7,7 @@
 // @supportURL  https://raw.githubusercontent.com/Rudchyk/tamp-scripts
 // @updateURL   https://raw.githubusercontent.com/Rudchyk/tamp-scripts/main/jira/examples/jira.js
 // @downloadURL https://raw.githubusercontent.com/Rudchyk/tamp-scripts/main/jira/examples/jira.js
-// @require     https://vuejs.org/js/vue.min.js
+// @require     https://vuejs.org/js/vue.js
 // @require     https://code.jquery.com/jquery-3.4.1.min.js
 // @require     https://raw.githubusercontent.com/Rudchyk/tamp-scripts/main/jira/components/Field.js
 // @require     https://raw.githubusercontent.com/Rudchyk/tamp-scripts/main/jira/components/copy-to-clipboard.js
@@ -94,7 +94,7 @@ Vue.component('App', {
   },
   methods: {
     mrHref(branch) {
-      return `${this.gitHubLink}${this.useBranchName(branch)}...${branch}`;
+      return `${this.gitHubLink}${branch}...${this.useBranchName(branch)}`;
     },
     useBranchName(branch) {
       return branch === this.branchData.default ? this.branchName : `${this.branchName}-${branch}`;
